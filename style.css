@@ -1,4 +1,3 @@
-
 body {
   display: flex;
   justify-content: center;
@@ -34,5 +33,15 @@ body {
   border-radius: 8px 8px 0 0;
   position: absolute;
   bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: height 0.3s;
+}
+
+#chargeText {
+  color: #000;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
 }
