@@ -1,0 +1,38 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  margin: 0;
+}
+
+.battery {
+  width: 100px;
+  height: 200px;
+  border: 5px solid #fff;
+  border-radius: 10px;
+  position: relative;
+}
+
+.battery::after {
+  content: "";
+  width: 30px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: -15px;
+  left: calc(50% - 15px);
+  border-radius: 3px;
+}
+
+.battery-level {
+  width: 100%;
+  height: 0;
+  background-color: #f9e70d;
+  border-radius: 8px 8px 0 0;
+  position: absolute;
+  bottom: 0;
+  transition: height 0.3s;
+}
